@@ -4,7 +4,6 @@ RUN apk --no-cache add gcc g++ make
 RUN apk add git
 WORKDIR /go/src/app
 COPY . .
-RUN go get github.com/gorilla/mux
 RUN GOOS=linux go build -ldflags="-s -w" -o ./bin/test ./main.go
 
 FROM alpine:3.10
