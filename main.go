@@ -45,7 +45,7 @@ func main() {
 func count(c *fiber.Ctx) error {
 	server := os.Getenv("SERVER_NAME")
 	time.Sleep(10 * time.Second)
-	return c.SendString("App version 2.0.0, server: " + server + "\n")
+	return c.SendString("App version 3.0.0, server: " + server + "\n")
 }
 
 type operation func(ctx context.Context) error

@@ -1,7 +1,7 @@
 version: '3.6'
 services:
   goservice-1:
-    image: goservice-1:2.0.0
+    image: goservice-1:3.0.0
     build: '.'
     environment:
       - SERVER_NAME=goservice-1
